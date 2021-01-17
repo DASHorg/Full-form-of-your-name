@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meaning of your name</title>
+<style type="text/css">
+body{
+		text-align:center;
+		font-family: Roboto, sans-serif;
+}
+#welcome{
+		font-family:cursive;
+		font-size:50px;
+}
+#to{
+		font-family:cursive;
+		font-size:40px;
+}
+#dash{
+		font-family:georgia;
+		margin-top:-20px;
+		font-size:35px;
+}
+#moyn{
+		font-family:cursive;
+		margin-top:-20px;
+}
+#hello{
+		text-align:left;
+		font-size:20px;
+		width:80px;
+		height:35px;
+		background-color:rgb(10,189,128);
+		color:white;
+		margin-left:-10px;
+		padding-left:10px;
+		padding-top:10px;
+		border-radius:0 50px 50px 0;
+		font-family:georgia;
+}
+#thanks{
+		margin-left:5%;
+		margin-right:5%;
+		text-align:center;
+		margin-top:20px;
+		font-family:fantasy;
+		font-size:18px;
+		color: white;
+		-webkit-text-stroke: 1px #F8F8F8;
+		text-shadow: 0px 0.5px 5px black;
+}
+#start{
+		padding: 15px 25px;
+		font-size: 24px;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+		background-color: rgb(10,189,128);
+		border: none;
+		border-radius: 15px;
+		box-shadow: 5px 9px #999;
+		margin-bottom:10px;
+}
+#start:hover{
+		background-color:#3e9e41;		 
+}
+#start:active{
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+}
+#name_hidden{
+		visibility:hidden;
+		margin-top:-50px;
+}
+input{
+		width:50%;
+		height:50px;
+		outline:none;
+		border:0px;
+		border-radius: 30px 30px 30px 30px;
+		background-color:white;
+		padding-left:5%;
+		padding-right:5%;
+		color:#F67D76;
+		font-size:20px;
+		font-weight:600;
+}
+::placeholder{
+		color:#FF7B73;
+		font-size:20px;
+		font-weight:600;
+		text-align:center;
+}
+input:focus::-webkit-input-placeholder{
+		text-align:left;
+		color:#FFBDB3;
+}
+div{
+		text-align:left;
+		margin-left:2%;
+		font-family:cursive;
+}
+</style>        
+    </head>
+    <body>
+        <h1><spam id="welcome">Welcome <span id="to">to</span></spam></h1>
+        <h1 id="dash">DASH's</h1>
+        <h1 id="moyn">Meaning Of Your Name</h1>
+        <img id="img" src="https://www.hostfully.com/wp-content/uploads/2019/03/Property-manager-responsibilities-How-to-EXCEED-client-expectations_950x570px-768x460.png" width="70%">
+        <br>
+        <p id="hello">Hello :)</p>
+        <p id="thanks">Thanks for visiting my code page. Here you can know the meaning of your name by randomly selected words.</p>
+    	<center>
+    	<button id="start" onclick="wait()">Lets get started</button>
+    	</center>
+    	
+    	<input id="name_hidden" placeholder="Name" maxlength="20" onfocus="change_to_e_y_n();" onfocusout="change_to_name();" onInput="tell_the_meaning();">
+		
+		<div id="pla_1" style="margin-top:5%"></div>
+		<div id="pla_2"></div>
+		<div id="pla_3"></div>
+		<div id="pla_4"></div>
+		<div id="pla_5"></div>
+		<div id="pla_6"></div>
+		<div id="pla_7"></div>
+		<div id="pla_8"></div>
+		<div id="pla_9"></div>
+		<div id="pla_10"></div>
+		<div id="pla_11"></div>
+		<div id="pla_12"></div>
+		<div id="pla_13"></div>
+		<div id="pla_14"></div>
+		<div id="pla_15"></div>
+		<div id="pla_16"></div>
+		<div id="pla_17"></div>
+		<div id="pla_18"></div>
+		<div id="pla_19"></div>
+		<div id="pla_20"></div>
+		
+<script type="text/javascript">
+function wait(){
+		setTimeout(search_meaning,1*250);
+}
+function search_meaning(){
+		document.getElementById("welcome").remove();
+		document.getElementById("dash").remove();
+		document.getElementById("moyn").remove();
+		document.getElementById("img").remove();
+		document.getElementById("hello").remove();
+		document.getElementById("thanks").remove();
+		document.getElementById("start").remove();
+		document.body.style.background = "#FF7B73"; //"linear-gradient(to top, #f43b47 0%, #453a94 100%)";
+		document.getElementById("name_hidden").id = "name";
+}
+var a = 50;
+function change_to_name(){
+		var inp_2 = document.getElementById("name");
+		
+		function change_2(){
+				a--;
+				inp_2.style.width = a+"%";
+				if (a!=50){
+						setTimeout(change_2,1);
+				}
+		}
+		change_2();
+		inp_2.placeholder = "Name";
+}
+function change_to_e_y_n(){
+		let inp_1 = document.getElementById("name");
+		
+		function change_1(){
+				a++;
+				inp_1.style.width = a+"%";
+				if (a!=80){
+						setTimeout(change_1,1);
+				}
+		}
+		change_1();
+		inp_1.placeholder = "Enter your name";
+}
+
+var universal = 0;
+var r_o_the_input;
+
+function tell_the_meaning(){
+		universal = 0;
+		let inp_val = document.getElementById("name").value.toUpperCase();
+		
+		var placing_1 = document.getElementById("pla_1");
+		var placing_2 = document.getElementById("pla_2");
+		var placing_3 = document.getElementById("pla_3");
+		var placing_4 = document.getElementById("pla_4");
+		var placing_5 = document.getElementById("pla_5");
+		var placing_6 = document.getElementById("pla_6");
+		var placing_7 = document.getElementById("pla_7");
+		var placing_8 = document.getElementById("pla_8");
+		var placing_9 = document.getElementById("pla_9");
+		var placing_10 = document.getElementById("pla_10");
+		var placing_11 = document.getElementById("pla_11");
+		var placing_12 = document.getElementById("pla_12");
+		var placing_13 = document.getElementById("pla_13");
+		var placing_14 = document.getElementById("pla_14");
+		var placing_15 = document.getElementById("pla_15");
+		var placing_16 = document.getElementById("pla_16");
+		var placing_17 = document.getElementById("pla_17");
+		var placing_18 = document.getElementById("pla_18");
+		var placing_19 = document.getElementById("pla_19");
+		var placing_20 = document.getElementById("pla_20");
+		
+		
+		placing_1.innerHTML = "";
+		placing_2.innerHTML = "";
+		placing_3.innerHTML = "";
+		placing_4.innerHTML = "";
+		placing_5.innerHTML = "";
+		placing_6.innerHTML = "";
+		placing_7.innerHTML = "";
+		placing_8.innerHTML = "";
+		placing_9.innerHTML = "";
+		placing_10.innerHTML = "";
+		placing_11.innerHTML = "";
+		placing_12.innerHTML = "";
+		placing_13.innerHTML = "";
+		placing_14.innerHTML = "";
+		placing_15.innerHTML = "";
+		placing_16.innerHTML = "";
+		placing_17.innerHTML = "";
+		placing_18.innerHTML = "";
+		placing_19.innerHTML = "";
+		placing_20.innerHTML = "";
+		
+		for(let ch of inp_val){
+				if(universal==19){
+						alert("Max limit of the input reached"); 
+				}
+				if(ch=="" || ch==" " || ch==null){
+						universal++;
+						
+						r_o_the_input = "<br>";
+				
+						position();
+				}
+				else if(ch=="A"){
+						universal++;
+				
+						let  char_a = new Array ("Amazing","Astounding","Academic","Accelerated","Acceptable","Accessible","Acclaimed","Accommodating","Accomplished","Accordant","Accurate");
+						let ran =Math.floor(Math.random()*11);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>A</span>"+"<span style='font-size:20px; color:white;'> : "+char_a[ran]+"<span>";
+	
+						position();
+				}
+				else if(ch=="B"){
+						universal++;
+				
+						let  char_b = new Array ("Brilliant","Boring","Beneficiary","Best","Bestower","Better","Bigwig","Blazing","Blessed","Bliss");
+						let ran =Math.floor(Math.random()*10);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>B</span>"+"<span style='font-size:20px; color:white;'> : "+char_b[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="C"){
+						universal++;
+				
+						let  char_c = new Array ("Caring","Curious","Coy","Courageous","Convincing","Contented","Chipper","Clean","Conquerer","Consoler","Conservator","Chosen","Calm");
+						let ran =Math.floor(Math.random()*13);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>C</span>"+"<span style='font-size:20px; color:white;'> : "+char_c[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="D"){
+						universal++;
+				
+						let  char_d = new Array ("Daring","Dictator","Dainty","Dapper","Dashing","Dauntless","Dazzling","Dear","Debonair","Decent","Decisive","Dedicated");
+						let ran =Math.floor(Math.random()*12);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>D</span>"+"<span style='font-size:20px; color:white;'> : "+char_d[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="E"){
+						universal++;
+				
+						let  char_e = new Array ("Excellent","Exotic","Eager","Earnest","Earthly","Easy","Easygoing","Ebullient","Eclectic"," Economical","Ecstatic","Ecumenical","Edified","Educated","Educational","Effective","Effectual","Effervescent","Efficient","Effortless","Effulgent");
+						let ran =Math.floor(Math.random()*21);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>E</span>"+"<span style='font-size:20px; color:white;'> : "+char_e[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="F"){
+						universal++;
+				
+						let  char_f = new Array ("Fatherly","Fascinating","Fearful","Fearless"," Fearsome","Feasible","Feathery","Feminist","Feudalistic","Fictitious","Filmy","Fine","Fit","Flamboyant","Flashy");
+						let ran =Math.floor(Math.random()*15);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>F</span>"+"<span style='font-size:20px; color:white;'> : "+char_f[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="G"){
+						universal++;
+				
+						let  char_g = new Array ("Good","Gutsy","Graceful","Gracious","Gradual","Grand","Grateful","Grave","Great","Greedy");
+						let ran =Math.floor(Math.random()*10);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>G</span>"+"<span style='font-size:20px; color:white;'> : "+char_g[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="H"){
+						universal++;
+				
+						let  char_h = new Array ("Hero","Humane","Humanitarian","Humble","Humorous","Hyperactive","Hypnotic","Hypocritical","Hypothetical","Hysterical");
+						let ran =Math.floor(Math.random()*10);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>H</span>"+"<span style='font-size:20px; color:white;'> : "+char_h[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="I"){
+						universal++;
+				
+						let  char_i = new Array ("Intelligent","Inspiring","Ideal","Idealistic","Identifiable","Ideological","Idiomatic","Idiosyncratic","Idiotic","Idle");
+						let ran =Math.floor(Math.random()*10);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>I</span>"+"<span style='font-size:20px; color:white;'> : "+char_i[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="J"){
+						universal++;
+				
+						let  char_j = new Array ("Jocular","Jovial","Joyful","Joyless","Joyous","Jubilant","Judgmental","Judicious","Jumbo","Just","Juvenile");
+						let ran =Math.floor(Math.random()*11);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>J</span>"+"<span style='font-size:20px; color:white;'> : "+char_j[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="K"){
+						universal++;
+				
+						let  char_k = new Array ("Kind","Kindred","King-sized brain","Knowledgeable");
+						let ran =Math.floor(Math.random()*4);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>K</span>"+"<span style='font-size:20px; color:white;'> : "+char_k[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="L"){
+						universal++;
+				
+						let  char_l = new Array ("Lovely","Loving","Loyal","Lucid","Lucky","Lunar","Luxurious");
+						let ran =Math.floor(Math.random()*7);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>L</span>"+"<span style='font-size:20px; color:white;'> : "+char_l[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="M"){
+						universal++;
+				
+						let  char_m = new Array ("Magical","Magnetic","Magnificent","Maiden","Main","Majestic","Major","Mammoth","Manageable","Managerial","Manipulative");
+						let ran =Math.floor(Math.random()*11);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>M</span>"+"<span style='font-size:20px; color:white;'> : "+char_m[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="N"){
+						universal++;
+				
+						let  char_n = new Array ("Nascent","Nice","Nationalist","Naive","Natural");
+						let ran =Math.floor(Math.random()*5);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>N</span>"+"<span style='font-size:20px; color:white;'> : "+char_n[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="O"){
+						universal++;
+				
+						let  char_o = new Array ("Obedient","Obligatory","Obliging","Optimistic","Odd","Old","Omnipresent");
+						let ran =Math.floor(Math.random()*7);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>O</span>"+"<span style='font-size:20px; color:white;'> : "+char_o[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="P"){
+						universal++;
+				
+						let  char_p = new Array ("Patient","Patriotic","Patronizing","Peaceful","Peculiar","Perfect","Performer","Persuasive","Pretty","Photogenic","Pioneering","Poetic");
+						let ran =Math.floor(Math.random()*12);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>P</span>"+"<span style='font-size:20px; color:white;'> : "+char_p[ran]+"<span>";
+						
+						position();
+				}
+				else if(ch=="Q"){
+						universal++;
+				
+						let  char_q = new Array ("Quaint","Quality","Quantitative","Questionable","Quick","Quiet","Quintessential","Quirky");
+						let ran =Math.floor(Math.random()*8);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>Q</span>"+"<span style='font-size:20px; color:white;'> : "+char_q[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="R"){
+						universal++;
+				
+						let  char_r = new Array ("Retro","Reverend","Reverential","Revolutionary","Rewarding","Rhetorical","Rich","Righteous");
+						let ran =Math.floor(Math.random()*8);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>R</span>"+"<span style='font-size:20px; color:white;'> : "+char_r[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="S"){
+						universal++;
+				
+						let  char_s = new Array ("Smooth","Sober","Social","Socialist","Soft","Soft-Spoken","Sorrowful","Sorry","Soulful","Sound");
+						let ran =Math.floor(Math.random()*10);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>S</span>"+"<span style='font-size:20px; color:white;'> : "+char_s[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="T"){
+						universal++;
+				
+						let  char_t = new Array ("Technical","Technological","Tedious","Teen","Temporary","Tense","Terrific","Trusted");
+						let ran =Math.floor(Math.random()*8);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>T</span>"+"<span style='font-size:20px; color:white;'> : "+char_t[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="U"){
+						universal++;
+				
+						let  char_u = new Array ("Upstart","Urbane","Urgent","Useful","Usual","Utopian");
+						let ran =Math.floor(Math.random()*6);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>U</span>"+"<span style='font-size:20px; color:white;'> : "+char_u[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="V"){
+						universal++;
+				
+						let  char_v = new Array ("Viable","Vibrant","Victorian","Victorious","Vital","Vocal");
+						let ran =Math.floor(Math.random()*6);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>V</span>"+"<span style='font-size:20px; color:white;'> : "+char_v[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="W"){
+						universal++;
+				
+						let  char_w = new Array ("Wise","Wishful","Witty","Wobbly","Wonderful","Wondrous","World-Famous","Worthy");
+						let ran =Math.floor(Math.random()*8);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>W</span>"+"<span style='font-size:20px; color:white;'> : "+char_w[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="X"){
+						universal++;
+				
+						let  char_x = new Array ("Xerox","Xfactor","Xenial");
+						let ran =Math.floor(Math.random()*3);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>X</span>"+"<span style='font-size:20px; color:white;'> : "+char_x[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="Y"){
+						universal++;
+				
+						let  char_y = new Array ("Young","Younger","Youngest","Youthful");
+						let ran =Math.floor(Math.random()*4);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>Y</span>"+"<span style='font-size:20px; color:white;'> : "+char_y[ran]+"<span>";
+				
+						position();
+				}
+				else if(ch=="Z"){
+						universal++;
+				
+						let  char_z = new Array ("Zeal","Zest");
+						let ran =Math.floor(Math.random()*2);
+						r_o_the_input = "<span style='font-size:30px; color:white;'>z</span>"+"<span style='font-size:20px; color:white;'> : "+char_z[ran]+"<span>";
+					
+						position();
+				}
+		}
+		
+}
+
+function position(){
+    
+    	var placing_1 = document.getElementById("pla_1");
+		var placing_2 = document.getElementById("pla_2");
+		var placing_3 = document.getElementById("pla_3");
+		var placing_4 = document.getElementById("pla_4");
+		var placing_5 = document.getElementById("pla_5");
+		var placing_6 = document.getElementById("pla_6");
+		var placing_7 = document.getElementById("pla_7");
+		var placing_8 = document.getElementById("pla_8");
+		var placing_9 = document.getElementById("pla_9");
+		var placing_10 = document.getElementById("pla_10");
+        var placing_11 = document.getElementById("pla_11");
+        var placing_12 = document.getElementById("pla_12");
+        var placing_13 = document.getElementById("pla_13");
+        var placing_14 = document.getElementById("pla_14");
+        var placing_15 = document.getElementById("pla_15");
+        var placing_16 = document.getElementById("pla_16");
+        var placing_17 = document.getElementById("pla_17");
+        var placing_18 = document.getElementById("pla_18");
+        var placing_19 = document.getElementById("pla_19");
+        var placing_20 = document.getElementById("pla_20");
+        
+        
+    	if(universal==1){
+        		placing_1.innerHTML = r_o_the_input;
+        }
+    	else if(universal==2){
+                placing_2.innerHTML = r_o_the_input;
+        }
+    	else if(universal==3){
+                placing_3.innerHTML = r_o_the_input;
+        }
+    	else if(universal==4){
+                placing_4.innerHTML = r_o_the_input;
+        }
+    	else if(universal==5){
+                placing_5.innerHTML = r_o_the_input;
+        }
+    	else if(universal==6){
+                placing_6.innerHTML = r_o_the_input;
+        }
+    	else if(universal==7){
+                placing_7.innerHTML = r_o_the_input;
+        }
+    	else if(universal==8){
+                placing_8.innerHTML = r_o_the_input;
+        }
+    	else if(universal==9){
+                placing_9.innerHTML = r_o_the_input;
+        }
+    	else if(universal==10){
+                placing_10.innerHTML = r_o_the_input;
+        }
+        else if(universal==11){
+        		placing_11.innerHTML = r_o_the_input;
+        }
+        else if(universal==12){
+        		placing_12.innerHTML = r_o_the_input;
+        }
+        else if(universal==13){
+        		placing_13.innerHTML = r_o_the_input;
+        }
+        else if(universal==14){
+        		placing_14.innerHTML = r_o_the_input;
+        }
+        else if(universal==15){
+        		placing_15.innerHTML = r_o_the_input;
+        }
+        else if(universal==16){
+        		placing_16.innerHTML = r_o_the_input;
+        }
+        else if(universal==17){
+        		placing_17.innerHTML = r_o_the_input;
+        }
+        else if(universal==18){
+        		placing_18.innerHTML = r_o_the_input;
+        }
+        else if(universal==19){
+        		placing_19.innerHTML = r_o_the_input;
+        }
+        else if(universal==20){
+        		placing_20.innerHTML = r_o_the_input;
+        }
+}
+
+
+</script>    	
+    </body>
+</html>
+
+
